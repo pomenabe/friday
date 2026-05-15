@@ -190,6 +190,7 @@ body {
     display: flex;
     gap: 8px;
     border: 2px solid #ccc;
+    justify-content: flex-end;
 }
 
 .menu-item {
@@ -208,5 +209,22 @@ body {
         &:hover {
             background-color: #888;
         }
+    }
+}
+
+.column-menu {
+    flex-direction: column;
+}
+
+.flexbox-container {
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #eee;
+
+    .box {
+        height: 100px;
     }
 }
