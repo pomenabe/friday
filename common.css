@@ -1,230 +1,229 @@
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #ccc;
+  margin: 0;
+  padding: 0;
+  background-color: #ccc;
 }
 
-* {}
+* {
+}
 
 .site-header {
-    background-color: #000;
+  background-color: #000;
 }
 
 .site-title {
-    margin: 0;
-    padding: 16px;
-    color: #fff;
-    background-color: #000;
+  margin: 0;
+  padding: 16px;
+  color: #fff;
+  background-color: #000;
 }
 
 .content-item {
-    background-color: #fff;
-    padding: 16px;
-    margin: 16px;
-    border-radius: 8px;
+  background-color: #fff;
+  padding: 16px;
+  margin: 16px;
+  border-radius: 8px;
 }
 
 .content-item-title {
-    margin: 16px 16px 8px 16px;
-    font-size: 18px;
-    font-weight: bold;
-    color: #000;
+  margin: 16px 16px 8px 16px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
 }
 
 .content-list {
-    background-color: #fff;
-    padding: 16px;
-    margin: 0 16px 16px 16px;
-    border-radius: 8px;
+  background-color: #fff;
+  padding: 16px;
+  margin: 0 16px 16px 16px;
+  border-radius: 8px;
 }
 
 .content-list-item {
-    list-style: none;
-    margin: 0;
-    padding: 0 16px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+  list-style: none;
+  margin: 0;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 
-    /* .content-list-item a と同義 */
-    a {
-        padding: 4px;
-        display: list-item;
-        list-style-type: disc;
+  /* .content-list-item a と同義 */
+  a {
+    padding: 4px;
+    display: list-item;
+    list-style-type: disc;
 
-        &:hover {
-            background-color: #f0f0f0;
-        }
+    &:hover {
+      background-color: #f0f0f0;
     }
+  }
 }
 
 .box {
-    margin: 10px;
-    width: 100px;
-    padding: 10px;
-    border: 10px solid red;
+  margin: 10px;
+  width: 100px;
+  padding: 10px;
+  border: 10px solid red;
 }
 
 .box.border-box {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .box.margin-auto {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .box.position-relative {
-    position: relative;
-    top: -50px;
-    left: -50px;
+  position: relative;
+  top: -50px;
+  left: -50px;
 }
 
 .box.position-absolute {
-    position: absolute;
-    top: 10px;
-    right: 0;
-    border-color: blue;
-    margin: 0;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  border-color: blue;
+  margin: 0;
 }
 
 .box.position-fixed {
-    position: fixed;
-    top: 0;
-    right: 0;
-    border-color: green;
-    margin: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  border-color: green;
+  margin: 0;
 }
 
 .box-container-wrapper {
-    position: relative;
-    padding: 16px;
-    border: 2px solid blue;
-    background-color: #888;
+  position: relative;
+  padding: 16px;
+  border: 2px solid blue;
+  background-color: #888;
 }
 
 .box-container {
-    background-color: #ccc;
-    height: 100px;
-    border: 2px solid red;
-    position: relative;
-    padding: 16px;
-    margin: 16px;
-    border-radius: 8px;
-
-    .box {
-        top: 0;
-        left: 0;
-        border-color: yellow;
-    }
+  background-color: #ccc;
+  height: 100px;
+  border: 2px solid red;
+  position: relative;
+  padding: 16px;
+  margin: 16px;
+  border-radius: 8px;
+  .box {
+    top: 0;
+    left: 0;
+    border-color: yellow;
+  }
 }
 
 /* NEWマークがカードの角からはみ出すサンプル（absolute） */
 .new-mark-sample-wrap {
-    margin-top: 24px;
-    padding: 28px 12px 8px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
+  margin-top: 24px;
+  padding: 28px 12px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
 }
 
 .new-mark-sample-note {
-    margin: 0;
-    max-width: 36em;
-    font-size: 14px;
-    line-height: 1.6;
-    color: #333;
+  margin: 0;
+  max-width: 36em;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
 }
 
 .new-mark-sample-note code {
-    font-size: 0.92em;
-    padding: 0 4px;
-    background: #eee;
-    border-radius: 4px;
+  font-size: 0.92em;
+  padding: 0 4px;
+  background: #eee;
+  border-radius: 4px;
 }
 
 .new-mark-sample-card {
-    position: relative;
-    width: 100%;
-    max-width: 320px;
-    margin: 0;
-    padding: 20px 18px 16px;
-    background: #fff;
-    border: 1px solid #bbb;
-    border-radius: 10px;
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  margin: 0;
+  padding: 20px 18px 16px;
+  background: #fff;
+  border: 1px solid #bbb;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
 }
 
 .new-mark-sample-badge {
-    position: absolute;
-    top: -10px;
-    right: -10px;
-    z-index: 1;
-    padding: 6px 12px;
-    font-size: 11px;
-    font-weight: 800;
-    letter-spacing: 0.08em;
-    color: #fff;
-    background: linear-gradient(145deg, #ff5252, #d32f2f);
-    border-radius: 4px;
-    box-shadow: 0 2px 8px rgba(211, 47, 47, 0.45);
-    transform: rotate(8deg);
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  z-index: 1;
+  padding: 6px 12px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: #fff;
+  background: linear-gradient(145deg, #ff5252, #d32f2f);
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(211, 47, 47, 0.45);
+  transform: rotate(8deg);
 }
 
 .new-mark-sample-title {
-    margin: 0 0 8px;
-    font-size: 17px;
-    line-height: 1.35;
-    color: #111;
+  margin: 0 0 8px;
+  font-size: 17px;
+  line-height: 1.35;
+  color: #111;
 }
 
 .new-mark-sample-body {
-    margin: 0;
-    font-size: 14px;
-    line-height: 1.55;
-    color: #444;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.55;
+  color: #444;
 }
 
 .menu {
-    padding: 8px;
-    display: flex;
-    gap: 8px;
-    border: 2px solid #ccc;
-    justify-content: flex-end;
+  padding: 8px;
+  display: flex;
+  gap: 8px;
+  border: 2px solid #ccc;
+  justify-content: flex-end;
 }
 
 .menu-item {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
 
-    a {
-        display: block;
-        padding: 8px 16px;
-        background-color: #333;
-        color: #fff;
-        text-decoration: none;
+  a {
+    display: block;
+    padding: 8px 16px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
 
-        &:hover {
-            background-color: #888;
-        }
+    &:hover {
+      background-color: #888;
     }
+  }
 }
 
 .column-menu {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 .flexbox-container {
-    display: flex;
-    flex-direction: row;
-    height: 300px;
-    justify-content: flex-end;
-    align-items: center;
-    background-color: #eee;
-
-    .box {
-        height: 100px;
-    }
+  display: flex;
+  flex-direction: row;
+  height: 300px;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #eee;
+  .box {
+    height: 100px;
+  }
 }
