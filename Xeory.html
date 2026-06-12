@@ -117,16 +117,48 @@
       <section>
         <h2>会社紹介</h2>
         <p>company</p>
+
+        <table>
+          <thead>
+            <tr>
+              <td>会社名</td>
+              <td>株式会社ルーシー</td>
+            </tr>
+
+            <tr>
+              <td>電話番号</td>
+              <td>03-6452-9355</td>
+            </tr>
+
+            <tr>
+              <td>住所</td>
+              <td>東京都港区新橋5丁目10-5 PMO新橋II 8F</td>
+            </tr>
+          </thead>
+        </table>
       </section>
 
       <section>
         <h2>お問い合わせ</h2>
         <p>inquiry</p>
 
-        <p>お名前 (必須)</p>
-        <p>メールアドレス (必須)</p>
-        <p>題名</p>
-        <p>メッセージ本文</p>
+        <form>
+          <p>お名前 (必須)</p>
+          <input id="name" type="text" name="name" required />
+
+          <p>メールアドレス (必須)</p>
+          <input id="email" type="email" name="email" required />
+
+          <p>題名</p>
+          <input id="subject" type="text" name="subject" />
+
+          <p>メッセージ本文</p>
+          <textarea id="message" name="message"></textarea>
+
+          <p>
+            <button type="submit">送信</button>
+          </p>
+        </form>
       </section>
     </main>
     <footer>
