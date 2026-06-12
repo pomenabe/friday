@@ -1,0 +1,19 @@
+/* 試し用：class が効いているか確認するスタイル */
+
+.site-header {
+  background-color: #333;
+  color: #fff;
+}
+
+.post-card {
+  border: 1px solid #ddd;
+  margin-bottom: 16px;
+}
+
+.post-image {
+  max-width: 100%;
+}
+
+.section-title {
+  border-bottom: 2px solid #333;
+}
