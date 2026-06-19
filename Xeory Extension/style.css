@@ -88,3 +88,27 @@ body {
         font-size: 14px;
     }
 }
+
+.app-heading {
+    background-color: #3B4552;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+}
+
+.app-title {
+    margin: 0 0 8px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 1.4;
+}
+
+.app-subtitle {
+    margin: 0;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.4;
+}
