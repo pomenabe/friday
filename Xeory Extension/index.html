@@ -24,7 +24,7 @@
     </header>
 
     <main class="site-main">
-      <article class="content-article">
+      <article class="content-bontainer">
         <header class="content-header">
           <h2 class="content-title">Xeory Extension</h2>
 
@@ -35,8 +35,8 @@
           </p>
         </header>
 
-        <section class="popular-posts">
-          <h2 class="section-title">人気のある記事</h2>
+        <section class="posts-container">
+          <h2 class="posts-title">人気のある記事</h2>
 
           <div class="post-list">
             <article class="post-card">
@@ -91,11 +91,11 @@
           </div>
         </section>
 
-        <section class="recent-posts">
+        <section class="posts-container">
           <h2 class="section-title">最近の投稿</h2>
 
           <div class="post-list">
-            <article class="post-card">
+            <article class="post-item">
               <img
                 class="post-image"
                 src="https://xeory.jp/extension/wp-content/uploads/sites/4/2025/01/sample02.jpg"
@@ -289,9 +289,9 @@
           </div>
 
           <form class="contact-form">
-            <dl class="form-list">
-              <dt class="form-label">お名前 (必須)</dt>
-              <dd class="form-field">
+            <dl class="contact-form-list">
+              <dt class="contact-form-label">お名前 (必須)</dt>
+              <dd class="contact-form-field">
                 <input
                   id="name"
                   class="form-input"
@@ -301,8 +301,8 @@
                 />
               </dd>
 
-              <dt class="form-label">メールアドレス (必須)</dt>
-              <dd class="form-field">
+              <dt class="contact-form-label">メールアドレス (必須)</dt>
+              <dd class="contact-form-field">
                 <input
                   id="email"
                   class="form-input"
@@ -312,8 +312,8 @@
                 />
               </dd>
 
-              <dt class="form-label">題名</dt>
-              <dd class="form-field">
+              <dt class="contact-form-label">題名</dt>
+              <dd class="contact-form-field">
                 <input
                   id="subject"
                   class="form-input"
@@ -322,17 +322,17 @@
                 />
               </dd>
 
-              <dt class="form-label">メッセージ本文</dt>
-              <dd class="form-field">
+              <dt class="contact-form-label">メッセージ本文</dt>
+              <dd class="contact-form-field">
                 <textarea
                   id="message"
-                  class="form-textarea"
+                  class="contact-form-textarea"
                   name="message"
                 ></textarea>
               </dd>
             </dl>
 
-            <p class="form-submit">
+            <p class="contact-form-submit">
               <button class="submit-button" type="submit">送信</button>
             </p>
           </form>
