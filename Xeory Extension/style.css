@@ -113,6 +113,38 @@ body {
     line-height: 1.4;
 }
 
+/*========================================================================
+ 　　Media Queries（For Desktop/Tablet）
+========================================================================*/
+
+@media (min-width: 768px) {
+    .app-layout {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+
+        /*
+        横幅の比率をグリッドトラックで定義：
+        メインに「１ｆｒ（残りすべての可変幅）」、サイドバーに「２５０ｐｘ」
+        */
+
+        grid-template-columns: 250px 1fr;
+        grid-template-areas:
+            "header header"
+            "nav nav"
+            "aside main"
+            "footer footer";
+    }
+}
+
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    position: relative;
+}
+
 
 /*====================================================================
 2.ハンバーガーボタン（スマホ用）
