@@ -112,3 +112,105 @@ body {
     font-size: 16px;
     line-height: 1.4;
 }
+
+
+/*====================================================================
+2.ハンバーガーボタン（スマホ用）
+====================================================================*/
+
+.menu-trigger {
+    display: blaok;
+    /* 初期状態（スマホ）では表示　*/
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 30px;
+    height: 24px;
+    position: relative;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    /* メニューより手前に出す */
+}
+
+/* 三本線の共通のスタイル　*/
+.menu-trigger span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.menu-trigger span:nth-child(1) {
+    top: 0;
+}
+
+.menu-trigger span:nth-child(2) {
+    top: 10px;
+}
+
+.menu-trigger span:nth-child(3) {
+    top: 20px;
+}
+
+/* ナビゲーションが開いたとき（×に変形 ）*/
+.menu-trigger[aria-expanded="true"] span:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+}
+
+.menu-trigger[aria-expanded="true"] span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-trigger[aria-expanded="true"] span:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+
+/* ========================================================================
+3. ナビゲーションメニュー（モバイル用：初期は非表示）
+======================================================================== */
+.app-nav {
+    display: none;
+    position: absolute;
+    top: 15%;
+    left: 0;
+    width: 100%;
+    background-color: #444c;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1)
+}
+
+/* JSで「.is-active」が表示する*/
+.app-nav.is-active {
+    display: block;
+}
+
+/*=========================================================================
+4.pc向けのスタイル　（画面幅７６８px　以上）
+=========================================================================*/
+@media (min-width: 768px) {
+
+    /* PCではボタンを隠す */
+    .menu-trigger {
+        display: none;
+    }
+
+    /* PCではメニューを常に横並びで表示 */
+    nav ul {
+        display: flex;
+        gap: 1em;
+    }
+
+    /* 位置を正常に戻す */
+    .app-nav {
+        display: flex;
+        position: static;
+        width: auto;
+        padding: 0;
+        box-shadow: none;
+    }
+}
