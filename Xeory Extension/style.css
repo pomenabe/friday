@@ -9,16 +9,21 @@ body {
 .site-header {
     background-color: #47b39d;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     height: 90px;
+    display: flex;
 }
 
 .site-title {
     margin: 0;
     padding: 16px;
     color: #fff;
-    font-size: 18px;
+    font-size: 15px;
+}
+
+.nav-link {
+    font-size: 12px;
 }
 
 .nav-list-title {
@@ -137,7 +142,7 @@ body {
     }
 }
 
-.app-header {
+.site-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
